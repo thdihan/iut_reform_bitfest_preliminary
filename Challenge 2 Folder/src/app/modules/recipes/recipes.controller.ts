@@ -30,7 +30,21 @@ const addRecipe = catchAsync(async (req, res) => {
     });
 });
 
+const getSuggestions = catchAsync(async (req, res) => {
+    const suggestions = await RecipesService.getSuggestionsFromHuggingFace(
+        req.body.prompt
+    );
+
+    sendResponse(res, {
+        success: true,
+        statusCode: 200,
+        message: "Suggestions fetched successfully",
+        data: suggestions,
+    });
+});
+
 export const RecipiesController = {
     getRecipies,
     addRecipe,
+    getSuggestions,
 };

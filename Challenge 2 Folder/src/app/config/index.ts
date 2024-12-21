@@ -6,4 +6,5 @@ dotenv.config({ path: path.join((process.cwd(), ".env")) });
 export default {
     port: process.env.PORT || 3000,
     database_url: process.env.DATABASE_URL,
+    huggingface_api_key: process.env.HUGGINGFACE_API_KEY,
 };
