@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Tea",
     "description": "Some text",
+    "type": "sweet",
     "imagePath": "No image",
     "ingredients": [
       {
