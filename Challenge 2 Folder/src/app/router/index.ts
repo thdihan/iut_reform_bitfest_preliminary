@@ -1,11 +1,12 @@
 import { Router } from "express";
+import { IngredientRoutes } from "../modules/ingredients/ingredients.routes";
 
 const router = Router();
 
 const moduleRoutes = [
     {
-        path: "/users",
-        route: require("./users").default,
+        path: "/ingredient",
+        route: IngredientRoutes,
     },
 ];
 
