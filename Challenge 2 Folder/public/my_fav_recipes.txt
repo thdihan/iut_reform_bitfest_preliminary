@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Tea",
+    "description": "Some text",
+    "imagePath": "No image",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "quantity": 200
+      }
+    ]
+  }
+]
